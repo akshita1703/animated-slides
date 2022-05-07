@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+.banner1,.banner2,.banner3
+{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+img{
+    width: 120%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    animation: zoom-out 3s linear infinite;
+}
+
+@keyframes zoom-out{
+    100%{
+        width: 100%;
+    }
+
+}
+.text1{
+    width: 600px;
+    position: absolute;
+    top: 100px;
+    left: 80px;
+    color: rgb(233, 234, 241);
+    animation: textup 12s linear infinite;
+    transform: translateY(100px);
+}
+@keyframes textup{
+    10%{
+        transform: translateY(0px);
+
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.text1 h1{
+    margin-bottom: 80px;
+    
+}
+.text1 p{
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 50px;
+    align-content: space-around;
+    
+}
+.text1 span{
+    background: red;
+    height: 3px;
+    width: 100px;
+    position: absolute;
+    left: 0;
+}
+.banner1{
+    animation: hacker 6s linear infinite;
+}
+.banner2{
+    animation: Cyber-Security 6s linear infinite;
+}
+.banner3{
+    animation: CS 6s linear infinite;
+}
+@keyframes HACKER{
+    0%{
+        visibility:visible;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+
+}
+@keyframes Cyber-Security{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: visible;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility:visible;
+    }
+
+}
+@keyframes CS{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
+
+}
+.text2{
+    animation-delay: 0s;
+}
+.text3{
+    animation-delay: 4s;
+}
+.text4{
+    animation-delay: 6s;
+}
+#H1{
+    font-size: 45px;
+    color: rgb(232, 243, 74);
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+#P1{
+    font-size: 25px;
+}
